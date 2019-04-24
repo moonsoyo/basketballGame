@@ -10,6 +10,12 @@
       rel="stylesheet"
     />
 
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.js"
+      integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
     <script src="js/scripts.js"></script>
   </head>
   <body>
@@ -27,13 +33,15 @@
           <div class="score-name">You</div>
           <div id="user-score" class="score-number">0</div>
         </div>
-        <div id="text">Computer will start first!</div>
+        <div id="text"></div>
       </div>
     </div>
     <div class="control-panel">
       <div id="computer" class="panel">
         <div class="control-name">Computer</div>
-        <button class="btn-computer" onClick="onComputerShoot()">Shoot!</button>
+        <button class="btn-computer" onClick="onComputerShoot()" disabled>
+          Shoot!
+        </button>
       </div>
       <div id="user" class="panel">
         <div class="control-name">You</div>
