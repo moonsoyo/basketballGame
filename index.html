@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Basketball Game!!</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Chelsea+Market"
+      rel="stylesheet"
+    />
+
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="scoreboard">
+      <div class="scoreboard inner">
+        <div class="shots-left">
+          <span>Shots Left</span>
+          <span id="span-shots-left">15</span>
+        </div>
+        <div class="score">
+          <div class="score-name">Computer</div>
+          <div id="computer-score" class="score-number">0</div>
+        </div>
+        <div class="score">
+          <div class="score-name">You</div>
+          <div id="user-score" class="score-number">0</div>
+        </div>
+        <div id="text">Computer will start first!</div>
+      </div>
+    </div>
+    <div class="control-panel">
+      <div id="computer" class="panel">
+        <div class="control-name">Computer</div>
+        <button class="btn-computer" onClick="onComputerShoot()">Shoot!</button>
+      </div>
+      <div id="user" class="panel">
+        <div class="control-name">You</div>
+        <button class="btn-user" onClick="onUserShoot(2)">
+          Two-Point Shot
+        </button>
+        <button class="btn-user" onClick="onUserShoot(3)">
+          Three-Point Shot
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
